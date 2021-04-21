@@ -1,62 +1,64 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gabriel Lima</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}"/>
+    <!-- https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+  </head>
+  <body class="bg-gray-700 text-white">
+      <header class="fixed bg-gray-700 top-0 left-0 right-0 z-50">
+        <div class="container mx-auto flex justify-between p-4">
+          <h1 class="text-xl font-black color-purple">Glima<span class="text-purple-500 shadow-ls"> Dev.</span></h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+          <div class="social-media mx-0 d-flex">
+                  <ul class="list-social-media text-lg -mx-20">
+                      <a class="link-social-media " href="https://github.com/GlimaGit">
+                          <li class="item-social-media">
+                              <i class="fab fa-github"></i>
+                          </li>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+                  </ul>
+              </div>
+                  <div class="social-media d-flex">
+                          <ul class="list-social-media text-lg -mx-80 d-flex">
+                              <a class="link-social-media " href="https://www.instagram.com/___glima/">
+                                  <li class="item-social-media">
+                                      <i class="fab fa-instagram mx-10"></i>
+                                  </li>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+                          </ul>
+                      </div>
+                      <div class="social-media d-flex">
+                              <ul class="list-social-media text-lg -mx-80 d-flex">
+                                  <a class="link-social-media " href="https://www.linkedin.com/in/gabriel-lsoares/">
+                                      <li class="item-social-media">
+                                          <i class="fab fa-linkedin-in -mx-40"></i>
+                                      </li>
 
-## Learning Laravel
+                              </ul>
+                          </div>
+          <nav class="-mx-2">
+            <a href="{{route('home')}}" class="text-lg mx-2 text-white font-black hover:text-purple-500 transition">Home</a>
+            <a href="{{route('about')}}" class="text-lg mx-2 text-white font-black hover:text-purple-500 transition">About me</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        @yield('page-content')
+      </main>
+      <footer>
+        <div class="container mx-auto p-4">
+          <p>&copy; Gabriel Lima</p>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+        </div>
+      </footer>
+  </body>
+</html>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
